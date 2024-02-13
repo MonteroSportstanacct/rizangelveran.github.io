@@ -1,0 +1,348 @@
+/*html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+}*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "minguwest";
+  src: url(Minguwest-mL6G2.ttf);
+}
+
+@font-face {
+  font-family: "1989font";
+  src: url(tayfont.ttf);
+}
+
+@font-face {
+  font-family: "alt1989font";
+  src: url(tayfontalt.ttf);
+}
+
+@font-face {
+  font-family: "raigarh";
+  src: url(Raigarh-Regular.ttf);
+}
+
+@font-face {
+  font-family: "raigarhmed";
+  src: url(Raigarh-Medium.ttf);
+}
+
+@font-face {
+  font-family: "raigarhbold";
+  src: url(Raigarh-Bold.ttf);
+}
+
+/*parallax*/
+.main {
+  background-image: url("https://images-origin.wallwiz.link/589330c1199baa000134951e_1");
+
+  width: 100%;
+  height: 100vh;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*parallax end*/
+
+.infoPane {
+
+  background-color: #e3f5ff;
+  height: 100%;
+}
+
+
+/*nav end*/
+
+
+.hs1 {
+  text-align: center;
+  font-family: '1989font', serif;
+  font-size: 40pt;
+}
+
+.hs6 {
+  text-align: center;
+  font-family: 'alt1989font', serif;
+}
+
+.hs {
+  text-align: center;
+  font-family: '1989font', serif;
+  font-size: 40pt;
+}
+
+.aboutMe,
+education,
+skills,
+workex {
+  padding: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutMe-content,
+.education-content,
+.skills-content,
+.work-content {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CSS */
+.resumeBut {
+  font-family: '1989font', serif;
+  --b: 3px;
+  --s: .45em;
+  --color: #373B44;
+  margin-top: 40px;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.resumeBut:hover,
+.resumeBut:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  cursor: pointer;
+}
+
+.resumeBut:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.parh {
+  text-align: center;
+  font-size: 25pt;
+  font-family: 'minguwest', serif;
+  line-height: 44px;
+}
+
+.par1 {
+  text-align: center;
+  font-size: 15pt;
+  font-family: 'minguwest', serif;
+  line-height: 44px;
+}
+
+#more {
+  display: none;
+  margin: 20px;
+}
+
+#readMore {
+  width: 20%;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+#readMore:hover {
+  background-color: #b8c2c7;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+
+.polaroid1 {
+  background-color: #fffefa;
+  border-radius: 3px;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  box-shadow: 1px 0px 42px 7px rgba(0, 0, 0, 0.28);
+
+}
+
+.polImg {
+  height: auto;
+  width: 50%;
+  padding: 20px;
+
+}
+
+.polImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 500px rgba(0, 0, 0, 0.9) inset;
+}
+
+
+/*media query to disable flex*/
+.polDesc {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.slider1 {
+  margin-top: 50px;
+  width: 70%;
+  height: 100%;
+  background-color: #e3f5ff;
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 20px;
+
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: white;
+  border-left-style: solid;
+  border-right-style: solid;
+  display: flex;
+  padding: 10px 0px 10px 10px;
+  box-shadow: 1px 1px 20px -5px rgba(0, 0, 0, 0.65);
+
+}
+
+.polIcon {
+  width: 256px;
+  height: 256px;
+  padding: 5px 5px 5px 5px;
+}
+
+.polIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.polDisp {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.polDisp ul,
+li {
+  font-family: 'minguwest', serif;
+  font-size: 13pt;
+  line-height: 1cm;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px
+}
+
+
+@media screen and (max-width: 768px) {
+  .par1 {
+    font-size: 0.5cm;
+
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .aboutMe-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+
+  }
+
+  #readMore {
+    width: 80%;
+    font-size: 10pt;
+  }
+
+  .polaroid1 {
+    padding: 0%;
+    display: block;
+    height: 70vh;
+    width: 80%;
+  }
+
+  .hs1 {
+    font-size: 54pt;
+  }
+
+  .hs {
+    font-size: 18pt;
+  }
+
+  .polImg {
+    height: 50%;
+    width: 85%;
+    padding: 20px;
+  }
+
+  .polDesc {
+    width: 93%;
+  }
+
+  .resumeBut {
+    margin-top: 0px;
+  }
+
+  .polIcon {
+    width: 64px;
+    height: 64px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+
+  }
+
+  .polIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+
+  .slide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
