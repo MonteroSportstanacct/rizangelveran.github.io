@@ -85,9 +85,9 @@
 }
 
 .aboutMe,
-education,
-skills,
-workex {
+.education,
+.skills,
+.workex {
   padding: 50px;
   margin-top: 10px;
   margin-left: 5px;
