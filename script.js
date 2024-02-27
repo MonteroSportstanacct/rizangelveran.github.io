@@ -29,3 +29,16 @@ function readMore() {
     moreText.style.display = "inline";
   }
 }
+
+//animation for polaroid1
+/*
+    setTimeout(function(){
+        document.getElementById("test").className = "";
+    }, 2500);
+    link:https://jsfiddle.net/r8dzvmgL/
+    search term: javascript how to make a div pulse after the page has been loaded
+*/
+/*
+animation for popups
+https://alvarotrigo.com/blog/css-animations-scroll/
+*/
